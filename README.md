@@ -1,5 +1,5 @@
 # 3-19
-
+# 資料
 //-------------------------------------------------//
 作業 1-1
 import matplotlib.pyplot as plt
@@ -20,7 +20,6 @@ plt.plot(x, y1,'r--',label="line L")
 作業 1-2
 import numpy as np
 import pylab as pl
-# 產生資料
 x = np.arange(0.0, 2.0*np.pi, 0.01)  
 y = np.sin(x)  
 #畫圖
