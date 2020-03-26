@@ -17,8 +17,7 @@ plt.title("Line Graph Example")
 plt.legend()  
 plt.show()  
 plt.plot(x, y1,'r--',label="line L")  
-
-                       ![image](https://github.com/SuWeizhe1124/3-19/blob/master/a1.JPG)  
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/a1.JPG)  
 //-------------------------------------------------//
 
 ## 作業 1-2  
