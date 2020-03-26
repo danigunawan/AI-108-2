@@ -16,7 +16,7 @@ plt.title("Line Graph Example")
 plt.legend()  
 plt.show()  
 plt.plot(x, y1,'r--',label="line L")  
-
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/a1.JPG)  
 //-------------------------------------------------//
 
 作業 1-2  
@@ -49,4 +49,4 @@ plt.text(0.6, 0.6, r'$\mathcal{A}\mathrm{sin}(2 \omega t)$',fontsize=20)
 plt.xlabel('time (s)')  
 plt.ylabel('volts (mV)')  
 plt.show()  
-
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/1234.JPG)  
