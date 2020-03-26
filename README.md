@@ -3,6 +3,7 @@
 
 
 ## 作業 1-1  
+
 import matplotlib.pyplot as plt  
 x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]  
 y1 = [2, 2, 5, 3, 1, 3, 5, 3, 1]  
@@ -16,7 +17,8 @@ plt.title("Line Graph Example")
 plt.legend()  
 plt.show()  
 plt.plot(x, y1,'r--',label="line L")  
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/a1.JPG)  
+
+                       ![image](https://github.com/SuWeizhe1124/3-19/blob/master/a1.JPG)  
 //-------------------------------------------------//
 
 ## 作業 1-2  
