@@ -1,7 +1,7 @@
 # 3-19 作業
 //-------------------------------------------------//
 
-作業 1-1  
+## 作業 1-1  
 import matplotlib.pyplot as plt  
 x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]  
 y1 = [2, 2, 5, 3, 1, 3, 5, 3, 1]  
@@ -18,7 +18,7 @@ plt.plot(x, y1,'r--',label="line L")
 ![image](https://github.com/SuWeizhe1124/3-19/blob/master/a1.JPG)  
 //-------------------------------------------------//
 
-作業 1-2  
+## 作業 1-2  
 import numpy as np  
 import pylab as pl  
 x = np.arange(0.0, 2.0*np.pi, 0.01)   
@@ -31,11 +31,11 @@ pl.title('sin')
 pl.show()  
 ![image](https://github.com/SuWeizhe1124/3-19/blob/master/1234.JPG)  
 //------------------------------------------------------//  
-作業 1-3  
+## 作業 1-3  
 努力中  
 //------------------------------------------------------//
   
-作業 1-4  
+## 作業 1-4  
 import numpy as np  
 import matplotlib.pyplot as plt  
 t = np.arange(0.0, 2.0, 0.01)  
