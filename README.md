@@ -1,6 +1,7 @@
 # 3-19
 # 資料
 //-------------------------------------------------//
+
 作業 1-1
 import matplotlib.pyplot as plt
 x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -17,6 +18,7 @@ plt.show()
 plt.plot(x, y1,'r--',label="line L")
 
 //-------------------------------------------------//
+
 作業 1-2
 import numpy as np
 import pylab as pl
@@ -34,8 +36,8 @@ pl.show()
 
 
 //------------------------------------------------------//
-作業 1-4
 
+作業 1-4
 import numpy as np
 import matplotlib.pyplot as plt
 t = np.arange(0.0, 2.0, 0.01)
