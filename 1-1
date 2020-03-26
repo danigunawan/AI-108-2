@@ -11,4 +11,4 @@ plt.title("Line Graph Example")
 plt.legend()
 plt.show()
 plt.plot(x, y1,'r--',label="line L")
-擷取.JPG
+！[image](擷取.JPG)
