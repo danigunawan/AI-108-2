@@ -1,11 +1,6 @@
 # 3-19 作業 4050D028 蘇偉哲
   
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-```
+
 ## 作業 1-1  
 
 import matplotlib.pyplot as plt  
@@ -52,6 +47,14 @@ plt.text(1, -0.6, r'$\sum_{i=0}^\infty x_i$', fontsize=20)
 plt.text(0.6, 0.6, r'$\mathcal{A}\mathrm{sin}(2 \omega t)$',fontsize=20)  
 plt.xlabel('time (s)')  
 plt.ylabel('volts (mV)')  
-plt.show()  
+```diff
++ plt.show() 
+```  
 ![image](https://github.com/SuWeizhe1124/3-19/blob/master/a4.JPG)  
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
