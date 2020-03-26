@@ -1,6 +1,5 @@
 # 3-19 作業 4050D028 蘇偉哲
-//-------------------------------------------------//  
-<font color="green"> Some green text </font>
+//-------------------------------------------------//    
 ## 作業 1-1  
 import matplotlib.pyplot as plt  
 x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]  
@@ -47,4 +46,5 @@ plt.text(0.6, 0.6, r'$\mathcal{A}\mathrm{sin}(2 \omega t)$',fontsize=20)
 plt.xlabel('time (s)')  
 plt.ylabel('volts (mV)')  
 plt.show()  
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/a4.JPG)   
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/a4.JPG)  
+//------------------------------------------------------------//  
