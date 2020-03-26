@@ -1,6 +1,8 @@
 # 3-19 作業 4050D028 蘇偉哲
 //-------------------------------------------------//    
-+ this will be highlighted in green
+or use svg file like inHTML, there is an sources
+[sources url](https://gist.github.com/CyberShadow/95621a949b07db295000)
+
 ## 作業 1-1  
 import matplotlib.pyplot as plt  
 x  = [1, 2, 3, 4, 5, 6, 7, 8, 9]  
