@@ -30,7 +30,7 @@ pl.xlabel('x')
 pl.ylabel('y')
 pl.title('sin')   
 pl.show()  
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/1234.JPG)
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/1234.JPG)  
 //------------------------------------------------------//  
 作業 1-3  
 
