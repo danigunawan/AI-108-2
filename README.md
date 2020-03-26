@@ -1,6 +1,6 @@
 # 3-19 作業 4050D028 蘇偉哲
   
-可以透過[github issue](https://github.com/softnshare/htmlcss/issues)來發佈你的心得分享
+可以透過[github issue](https://github.com/SuWeizhe1124/3-19/blob/master/a4.html)來發佈你的心得分享
 
 ## 作業 1-1  
 
