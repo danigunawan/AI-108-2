@@ -47,4 +47,5 @@ Y_pred = model.predict(X_test)
 plt.scatter(X_test, Y_test)  
 plt.plot(X_test, Y_pred)  
 plt.show()
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/k.JPG)   
 
