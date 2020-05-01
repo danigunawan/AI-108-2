@@ -33,10 +33,10 @@ model.compile(loss='mse', optimizer='sgd')
 # training
 print('Training -----------')
 for step in range(301):
-    cost = model.train_on_batch(X_train, Y_train)
-    if step % 100 == 0:
-        print('train cost: ', cost)
-        # test
+cost = model.train_on_batch(X_train, Y_train)
+if step % 100 == 0:
+print('train cost: ', cost)
+# test
 print('\nTesting ------------')
 cost = model.evaluate(X_test, Y_test, batch_size=40)
 print('test cost:', cost)
