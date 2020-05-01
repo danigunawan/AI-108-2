@@ -1,4 +1,4 @@
-# 作業  第一個
+# 作業  10個 圖片 學那麼多演算法 就來是玩別人程式
 import numpy as np
 import matplotlib.pyplot as plt
 
