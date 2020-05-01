@@ -47,3 +47,4 @@ Y_pred = model.predict(X_test)
 plt.scatter(X_test, Y_test)  
 plt.plot(X_test, Y_pred)  
 plt.show()
+
