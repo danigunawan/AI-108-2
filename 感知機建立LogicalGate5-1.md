@@ -1,5 +1,6 @@
 # 5-1  
-# 使感知機建立LogicalGate 作業5-1  
+# 使感知機建立LogicalGate 
+# 作業5-1  
 #5-1  
 使用感知機建立LogicalGate 數位邏輯電路 那卡洛圖??? 有點好奇算了   
 # coding: utf-8  
