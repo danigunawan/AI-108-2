@@ -77,4 +77,21 @@ plt.title("Development of cost during training")
 plt.xlabel("Number of iterations")
 plt.ylabel("Cost")
 plt.show()
-  ![image](https://github.com/SuWeizhe1124/3-19/blob/master/擷取6.JPG) 
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/擷取6.JPG)
+
+n_samples, _ = X_train.shape
+n_samples_test, _ = X_test.shape
+
+y_p_train = regressor.predict(X_train)
+y_p_test = regressor.predict(X_test)
+
+error_train =  (1 / n_samples) * np.sum((y_p_train - y_train) ** 2)
+error_test =  (1 / n_samples_test) * np.sum((y_p_test - y_test) ** 2)
+
+print(f"Error on training set: {np.round(error_train, 4)}")
+print(f"Error on test set: {np.round(error_test)}")  
+
+執行後:
+Error on training set: 1.1221
+Error on test set: 1.0
+  
