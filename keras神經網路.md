@@ -15,10 +15,10 @@ Y = 0.5 * X + 2 + np.random.normal(0, 0.05, (200, ))
 # plot data  
 plt.scatter(X, Y)  
 plt.show()    
-//----------------------------------------------//
+//----------------------------------------------//  
 #測試 Y = 2 * X + 2 + np.random.normal(0, 0.05, (200, ))  
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/HJJPG.JPG) 
-#測試 Y = 2 * X + 2 + np.random.normal(0, 0.05, (200, ))  
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/HJJPG.JPG) 
-#測試 Y = 2 * X + 2 + np.random.normal(0, 0.05, (200, ))  
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/HJJPG.JPG) 
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/HJJPG.JPG)   
+#測試 Y = 2 * X + 2 + np.random.normal(0, 0.05, (200, ))    
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/HJJPG.JPG)   
+#測試 Y = 2 * X + 2 + np.random.normal(0, 0.05, (200, ))    
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/HJJPG.JPG)   
