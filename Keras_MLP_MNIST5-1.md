@@ -32,6 +32,9 @@ model.add(
         activation='relu'  
     )  
 )  
+#  執行後  
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/G1.JPG)  
+
 # 測試報告:增加dropout layer  
 Why? 避免overfitting  
 from tensorflow.python.keras.layers import Dropout  
@@ -45,5 +48,4 @@ model.add(
         activation='softmax'  
     )  
 )  
-#  執行後  
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/G1.JPG)   
+ 
