@@ -1,4 +1,4 @@
-# 3-19
+# 5-1
 Keras_MLP_MNIST 作業  
 # Keras Sequential 開發模式:載入資料集
 from tensorflow.python.keras.datasets import mnist  
