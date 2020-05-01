@@ -33,12 +33,12 @@ model.add(
     )  
 )  
 # 測試報告:增加dropout layer  
-# Why? 避免overfitting  
-# from tensorflow.python.keras.layers import Dropout  
-# nodel.add(Dropout(0.5))  
-# 最後加上輸出層 Output Layer:  
-# activation激活函數用softmax  
-# units=10[數字0-9共10種類別]  
+Why? 避免overfitting  
+from tensorflow.python.keras.layers import Dropout  
+nodel.add(Dropout(0.5))  
+最後加上輸出層 Output Layer:  
+activation激活函數用softmax  
+units=10[數字0-9共10種類別]  
 model.add(  
     Dense(  
         units=10,  
