@@ -1,5 +1,5 @@
 # 作業  10個 圖片 學那麼多演算法 就來是玩別人程式#
-#  看的懂 玩就對了
+#  看的懂 玩就對了  別叫我寫公式我會嫌煩 我只會看的改一改
 import numpy as np
 import matplotlib.pyplot as plt
 x, y = koch_snowflake(order=5)
