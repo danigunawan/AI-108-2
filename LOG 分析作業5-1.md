@@ -73,15 +73,15 @@ error_train =  (1 / n_samples) * np.sum((y_p_train - y_train) ** 2)
 error_test =  (1 / n_samples_test) * np.sum((y_p_test - y_test) ** 2)
 print(f"Error on training set: {np.round(error_train, 4)}")
 print(f"Error on test set: {np.round(error_test)}")  
-# 執行後:
-Error on training set: 1.1221
-Error on test set: 1.0
-fig = plt.figure(figsize=(8,6))
-plt.title("Dataset in blue, predictions for test set in orange")
-plt.scatter(X_train, y_train)
-plt.scatter(X_test, y_p_test)
-plt.xlabel("First feature")
-plt.ylabel("Second feature")
+# 執行後:  
+Error on training set: 1.1221  
+Error on test set: 1.0  
+fig = plt.figure(figsize=(8,6))  
+plt.title("Dataset in blue, predictions for test set in orange")  
+plt.scatter(X_train, y_train)  
+plt.scatter(X_test, y_p_test)  
+plt.xlabel("First feature")  
+plt.ylabel("Second feature")  
 plt.show()  
 ![image](https://github.com/SuWeizhe1124/3-19/blob/master/擷取3.JPG)  
- # 
+
