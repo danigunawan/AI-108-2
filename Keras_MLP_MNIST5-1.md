@@ -18,7 +18,6 @@ print('y_train.shape:', y_train.shape)
 print('y_test.shape:', y_test.shape)  
 #  執行後  
 ![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/G2.JPG)  
-
 #  定義(建置)MLP神經網路  
 from tensorflow.python.keras.models import Sequential  
 from tensorflow.python.keras.layers import Dense  
