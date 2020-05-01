@@ -20,12 +20,9 @@ print(f'Shape y_train: {y_train.shape}')
 print(f'Shape X_test: {X_test.shape}')  
 print(f'Shape y_test: {y_test.shape}')   
    ![image](https://github.com/SuWeizhe1124/3-19/blob/master/BD.JPG) 
-
 class LinearRegression:
-    
     def __init__(self):
         pass
-
     def train_gradient_descent(self, X, y, learning_rate=0.01, n_iters=100):
         """
         Trains a linear regression model using gradient descent
