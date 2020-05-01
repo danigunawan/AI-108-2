@@ -12,7 +12,7 @@ plt.title("Dataset")
 plt.xlabel("First feature")  
 plt.ylabel("Second feature")   
 plt.show()  
-  ![image](https://github.com/SuWeizhe1124/3-19/blob/master/擷取.JPG) 
+  ![image](https://github.com/SuWeizhe1124/3-19/blob/master/HJJPG.JPG) 
 # We will use a simple training set  
 X = 2 * np.random.rand(500, 1)  
 y = 5 + 3 * X + np.random.randn(500, 1)  
