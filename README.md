@@ -101,6 +101,6 @@ plt.scatter(X_train, y_train)
 plt.scatter(X_test, y_p_test)
 plt.xlabel("First feature")
 plt.ylabel("Second feature")
-plt.show()
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/U2JPG.JPG)
+plt.show()  
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/U2JPG.JPG)  
  # 
