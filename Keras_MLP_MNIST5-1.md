@@ -35,17 +35,19 @@ model.add(
 #  執行後  
 ![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/G1.JPG)  
 
-# 測試報告:增加dropout layer  
-Why? 避免overfitting  
-from tensorflow.python.keras.layers import Dropout  
-nodel.add(Dropout(0.5))  
-最後加上輸出層 Output Layer:  
-activation激活函數用softmax  
-units=10[數字0-9共10種類別]  
-model.add(  
-    Dense(  
-        units=10,  
-        activation='softmax'  
-    )  
-)  
+# 設定模型的執行項目
+model.compile(
+    optimizer='adam',
+    loss='categorical_crossentropy',
+    metrics=['accuracy']
+)
+
+# 訓練
+history_adam = model.fit(
+    x_train,
+    y_train,
+    batch_size=32,
+    epochs=20,
+    validation_split=0.2,
+)
  
