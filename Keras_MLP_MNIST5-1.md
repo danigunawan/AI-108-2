@@ -47,4 +47,4 @@ model.add(
     )  
 )  
 #  執行後  
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/a1.JPG)   
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/G1.JPG)   
