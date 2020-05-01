@@ -1,9 +1,7 @@
-# 作業  10個 圖片 學那麼多演算法 就來是玩別人程式
+# 作業  10個 圖片 學那麼多演算法 就來是玩別人程式#
+#  看的懂 玩就對了
 import numpy as np
 import matplotlib.pyplot as plt
-
-
-
 x, y = koch_snowflake(order=5)
 plt.figure(figsize=(8, 8))
 plt.axis('equal')
