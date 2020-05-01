@@ -1,4 +1,4 @@
-# 作業
+# 作業  第一個
 import numpy as np
 import matplotlib.pyplot as plt
 
