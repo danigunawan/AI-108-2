@@ -16,3 +16,4 @@ Y = 0.5 * X + 2 + np.random.normal(0, 0.05, (200, ))
 plt.scatter(X, Y)  
 plt.show()    
 //----------------------------------------------//
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/HJJPG.JPG) 
