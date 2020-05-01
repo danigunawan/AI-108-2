@@ -102,5 +102,5 @@ plt.scatter(X_test, y_p_test)
 plt.xlabel("First feature")
 plt.ylabel("Second feature")
 plt.show()  
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/T10.JPG)  
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/擷取3.JPG)  
  # 
