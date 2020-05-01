@@ -65,4 +65,4 @@ class LinearRegression:
 
     def predict(self, X):
         return np.dot(X, self.weights) + self.bias
-  ![image](https://github.com/SuWeizhe1124/3-19/blob/master/HJJPG.JPG) 
+  ![image](https://github.com/SuWeizhe1124/3-19/blob/master/擷取6.JPG) 
