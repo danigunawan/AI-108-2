@@ -36,18 +36,18 @@ model.add(
 ![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/G1.JPG)  
 
 # 設定模型的執行項目
-model.compile(
-    optimizer='adam',
-    loss='categorical_crossentropy',
-    metrics=['accuracy']
+model.compile(  
+    optimizer='adam',  
+    loss='categorical_crossentropy',  
+    metrics=['accuracy']  
 )
 
 # 訓練
-history_adam = model.fit(
-    x_train,
-    y_train,
-    batch_size=32,
-    epochs=20,
-    validation_split=0.2,
+history_adam = model.fit(  
+    x_train,  
+    y_train,  
+    batch_size=32,  
+    epochs=20,  
+    validation_split=0.2,  
 )
  
