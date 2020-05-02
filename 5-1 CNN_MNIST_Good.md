@@ -73,10 +73,10 @@ batch_size = 128
 num_classes = 10
 epochs = 12
 
-# input image dimensions
+# 輸入圖像尺寸
 img_rows, img_cols = 28, 28
 
-# the data, split between train and test sets
+# 數據，分為訓練集和測試集
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
 if K.image_data_format() == 'channels_first':
@@ -96,7 +96,7 @@ print('x_train shape:', x_train.shape)
 print(x_train.shape[0], 'train samples')
 print(x_test.shape[0], 'test samples')
 
-# convert class vectors to binary class matrices
+# 將類向量轉換為二進制類矩陣
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
 
