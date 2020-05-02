@@ -56,5 +56,5 @@ model.fit(X_train, y_train, epochs=10, batch_size=200, verbose=2)
 
 score = model.evaluate(X_validation, y_validation, verbose=0)  
 print('CNN_Large: %.2f%%' % (score[1] * 100))  
-
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/%E9%8C%AF%E8%AA%A4.JPG) 
 
