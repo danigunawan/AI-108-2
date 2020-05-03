@@ -19,18 +19,14 @@ np.random.seed(seed)
 
 # 從Keras導入Mnist資料集  
 (X_train, y_train), (X_validation, y_validation) = mnist.load_data()  
-  
 X_train = X_train.reshape(X_train.shape[0], 1, 28, 28).astype('float32')  
 X_validation = X_validation.reshape(X_validation.shape[0], 1, 28, 28).astype('float32')  
-
 # 格式化資料到0-1之前  
 X_train = X_train / 255  
 X_validation = X_validation / 255  
-
 # one-hot編碼  
 y_train = np_utils.to_categorical(y_train)  
 y_validation = np_utils.to_categorical(y_validation)  
-  
 # 創建模型  
 def create_model():  
     model = Sequential()  
