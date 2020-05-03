@@ -1,6 +1,6 @@
 # 5-3 Recurrent Neural Network作業
 
-//---------------------------------------//
+//---------------------------------------//  
 from keras.layers import SimpleRNN,LSTM,Dropout,Dense  
 import numpy as np  
 from keras.utils import np_utils  
@@ -9,21 +9,17 @@ from keras.datasets import mnist
 import matplotlib.pyplot as plt  
 from keras.models import *  
 #from keras.models import Sequential  
-
-
 #建立訓練資料和測試資料，包括訓練特徵集、訓練標籤和測試特徵集、測試標籤	
 (train_feature, train_label),\
 (test_feature, test_label) = mnist.load_data()  
+#將 Features 特徵值換為 60000*28*28 的 3 維矩陣  
+train_feature_vector = train_feature.reshape(len(train_feature),28,28).astype('float32')  
+test_feature_vector = test_feature.reshape(len(test_feature),28,28).astype('float32')  
+#Features 特徵值標準化  
+train_feature_normalize = train_feature_vector/255  
+test_feature_normalize = test_feature_vector/255  
 
-#將 Features 特徵值換為 60000*28*28 的 3 維矩陣
-train_feature_vector = train_feature.reshape(len(train_feature),28,28).astype('float32')
-test_feature_vector = test_feature.reshape(len(test_feature),28,28).astype('float32')
-
-#Features 特徵值標準化
-train_feature_normalize = train_feature_vector/255
-test_feature_normalize = test_feature_vector/255
-
-#label 轉換為 One-Hot Encoding 編碼
+#label 轉換為 One-Hot Encoding 編碼  
 train_label_onehot = np_utils.to_categorical(train_label)  
 test_label_onehot = np_utils.to_categorical(test_label)  
 model = Sequential()  
