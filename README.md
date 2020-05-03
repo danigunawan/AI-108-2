@@ -37,7 +37,7 @@ encoder_state = [state_h, state_c]
 decoder_input = layers.Input(shape=(None, ))  
 decoder_embedded = layers.Embedding(input_dim=decoder_vocab, output_dim=64)(decoder_input)  
 
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/1234.JPG) 
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/RNN-1.JPG) 
 
 ## 將這兩種狀態作為初始狀態傳遞到新的LSTM層  
 decoder_output = layers.LSTM(   
@@ -46,5 +46,5 @@ output = layers.Dense(10)(decoder_output)
 model = tf.keras.Model([encoder_input, decoder_input], output)    
 model.summary()   
 
-![image](https://github.com/SuWeizhe1124/3-19/blob/master/1234.JPG) 
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/RNN-2.JPG) 
 
