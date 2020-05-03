@@ -1,4 +1,3 @@
-# 3-19
 # 5-3 Recurrent Neural Network作業
 ## 带有Keras的递归神经网络（RNN）
 ##  设定  
