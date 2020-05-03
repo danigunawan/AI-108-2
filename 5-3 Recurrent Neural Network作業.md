@@ -89,7 +89,7 @@ print('\n準確率=',scores[1])
 prediction=model.predict_classes(test_feature_normalize)  
 prediction  
 
-
+![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/RA.JPG) 
 
 
 
