@@ -1,6 +1,6 @@
 # 5-3 Recurrent Neural Network作業
 
-//---------------------------------------//  
+## //----SimpleRNN------------//  
 from keras.layers import SimpleRNN,LSTM,Dropout,Dense  
 import numpy as np  
 from keras.utils import np_utils  
@@ -48,9 +48,46 @@ prediction
 
 ![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/RA.JPG) 
 
+## //----使用LSTM------------// 
+from keras.layers import SimpleRNN,LSTM,Dropout,Dense
+import numpy as np
+from keras.utils import np_utils
+np.random.seed(10)
+from keras.datasets import mnist
+import matplotlib.pyplot as plt
+from keras.models import *
+from keras.models import Sequential
+## 建立訓練資料和測試資料，包括訓練特徵集、訓練標籤和測試特徵集、測試標籤	
+(train_feature, train_label),\
+(test_feature, test_label) = mnist.load_data()  
 
-
-
+## 將 Features 特徵值換為 60000*28*28 的 3 維矩陣
+train_feature_vector = train_feature.reshape(len(train_feature),28,28).astype('float32')
+test_feature_vector = test_feature.reshape(len(test_feature),28,28).astype('float32')
+## Features 特徵值標準化
+train_feature_normalize = train_feature_vector/255
+test_feature_normalize = test_feature_vector/255
+## label 轉換為 One-Hot Encoding 編碼
+train_label_onehot = np_utils.to_categorical(train_label)
+test_label_onehot = np_utils.to_categorical(test_label)
+model = Sequential()
+model.add(LSTM(
+    input_shape=( 28, 28),
+    units=256,
+    unroll=True
+))
+model.add(Dropout(0.1))
+model.add(Dense(units=10, kernel_initializer='normal', activation='softmax'))
+model.summary()
+model.compile(loss='categorical_crossentropy', 
+              optimizer='adam', metrics=['accuracy'])
+train_history =model.fit(x=train_feature_normalize,
+                         y=train_label_onehot,validation_split=0.2, 
+                         epochs=10, batch_size=200,verbose=2)
+scores = model.evaluate(test_feature_normalize, test_label_onehot)
+print('\n準確率=',scores[1])
+prediction=model.predict_classes(test_feature_normalize)
+prediction
 
 
 
