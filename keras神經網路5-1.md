@@ -1,9 +1,9 @@
-#  5-1 keras建置神經網路
-作業
+#  5-1 keras建置神經網路  
+作業  
 使用keras建置神經網路求解簡單線性回歸問題  
 import numpy as np  
-#測試 Y = 2 * X + 2 + np.random.normal(0, 0.05, (200, ))  
-#測試 Y = 0.2 * X + 2 + np.random.normal(0, 0.05, (200, ))  
+#測試 Y = 2 * X + 2 + np.random.normal(0, 0.05, (200, ))   
+#測試 Y = 0.2 * X + 2 + np.random.normal(0, 0.05, (200, ))    
 np.random.seed(1337)  # for reproducibility  
 from keras.models import Sequential  
 from keras.layers import Dense  
