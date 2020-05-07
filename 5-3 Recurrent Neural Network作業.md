@@ -150,6 +150,5 @@ decoder_output = layers.LSTM(
 output = layers.Dense(10)(decoder_output)   
 model = tf.keras.Model([encoder_input, decoder_input], output)    
 model.summary()   
-
 ![image](https://github.com/SuWeizhe1124/3-19/blob/master/Kers%20%E6%B8%AC%E8%A9%A6/RNN-2.JPG) 
 
