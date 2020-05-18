@@ -12,4 +12,4 @@
 
 ## size 3*3 99% 依照這邏輯一開始3*3就好了  多5*5 是怎  你敢信?
 ## 辨識率 99% :   https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC5-1%E8%AC%9B-%E5%8D%B7%E7%A9%8D%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1%E4%BB%8B%E7%B4%B9-convolutional-neural-network-4f8249d65d4f
-##  最佳解 : https://blog.csdn.net/wuzqChom/article/details/74785643   : same 多一列 size 3*3 上下左右多一列 5*5
+##  最佳解 :https://kknews.cc/zh-tw/news/g9jxx4m.html   : same 多一列 size 3*3 上下左右多一列 5*5
