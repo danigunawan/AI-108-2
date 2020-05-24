@@ -1,0 +1,12 @@
+
+簡易CNN 3層捲經神經網路
+https://kknews.cc/zh-tw/code/3342l3o.html
+圖片 size  25*25 
+
+
+沒有補0 
+
+
+也沒有 像素質 0 與 1 搞錯 
+
+(證明)
