@@ -1,0 +1,48 @@
+https://machinelearningmastery.com/handwritten-digit-recognition-using-convolutional-neural-networks-python-keras/    手寫辨識
+
+//-------------------------------------------------------------------------//
+Installation of Tensorflow & Keras
+
+T094000013 ( 鄭朝榮 ) 2020-04-13 13:42
+ 0 
+environment check (python2.7.x OR python 3.5.x) : conda list
+
+(1)Install Tensorflow in the Anaconda virtual environment 
+
+conda create --name tensorflow python=3.5 anaconda
+activate tensorflow
+pip install tensorflow
+python -m pip install --upgrade pip
+
+或指定版本  "pip install tensorflow==1.12.0"
+
+或手動安裝  "pip install tensorflow_gpu-2.0.0-cp36-cp36m-win_amd64.whl"
+
+(須先下載 xxxx.whl form https://www.tensorflow.org/install/pip or  https://pypi.org/project/tensorflow/)
+
+(What is a WHL file? https://fileinfo.com/extension/whl)
+
+(2)Install Keras
+pip install keras (or conda install keras)
+
+或指定版本  "pip install keras==2.2.0"    (Compatible to tensorflow==1.12.0)
+
+(3)測試版本
+
+>>>import tensorflow as tf
+
+>>>tf.__version__
+
+>>>import keras as ks
+
+>>ks.__version__
+//----------------------------------------------------------------------//
+
+
+https://www.deeplearning-academy.com/p/ai-wiki-overfitting-underfitting
+
+
+
+//--------------------------------------------------------------------//
+
+

@@ -1,0 +1,11 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.quora.com	TRUE	/	FALSE	1999999999	m-tgvs	PZojdLUhgD056qwKb9X4Jx/R3w7XyfByaROpJgqTZ/Cxx4EifNYBq3Ok7u8wJX95Taa9U4Xu5vfYmkPTWBOaDA==
+.quora.com	TRUE	/	FALSE	1999999999	m-ans_frontend_early_version	9d3e8b2c3eb228d4
+.quora.com	TRUE	/	FALSE	1999999999	m-early_v	2964ab48428ef2bd
+.quora.com	TRUE	/	FALSE	1999999999	m-b	ENXVGZnK97Y-mS2fIVFcXw==
+.quora.com	TRUE	/	FALSE	1999999999	m-b_lax	ENXVGZnK97Y-mS2fIVFcXw==
+.quora.com	TRUE	/	FALSE	1999999999	m-b_strict	ENXVGZnK97Y-mS2fIVFcXw==
+www.quora.com	TRUE	/	FALSE	1999999999	SameSite	Strict
+.quora.com	TRUE	/	FALSE	1999999999	m-s	Fd9VzLSHm4W_BhLcefgKhw==
+

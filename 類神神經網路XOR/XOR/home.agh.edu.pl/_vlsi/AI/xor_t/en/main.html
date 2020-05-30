@@ -1,0 +1,252 @@
+<html>
+
+
+<!-- Mirrored from home.agh.edu.pl/~vlsi/AI/xor_t/en/main.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 May 2020 06:54:18 GMT -->
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=windows-1250">
+<title>XOR problem - homepage</title>
+</head>
+
+<body bgcolor="#3C67FB" link="#FF0000" vlink="#FFFFFF"
+alink="#00FFFF" bgproperties="fixed">
+<div align="center"><center>
+
+<table border="0" cellpadding="2" cellspacing="1">
+    <tr>
+        <td><p align="center"><font color="#EEEEEE" size="4"
+        face="Arial">XOR problem theory</font></p>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" rowspan="2" width="700"><p align="left"
+        class="MsoNormal" style="text-indent:35.4pt"><font
+        color="#EEEEEE" face="Arial"><br>
+        Let's imagine neurons that have attributes as follow:<br>
+        - they are set in one layer<br>
+        - each of them has its own polarity (by the polarity we
+        mean b<sub>1</sub> weight which leads from single value
+        signal)<br>
+        - each of them has its own weights W<sub>ij</sub> that
+        lead from x<sub>j </sub>inputs<br>
+        This structure of neurons with their attributes form a
+        single-layer neural network. Above parameters are set in
+        the learning process of a network (output y<sub>i</sub>
+        signals are adjusting themselves to expected u<sub>i </sub>set
+        signals) (Fig.1). This type of network has limited
+        abilities. For example, there is a problem with XOR
+        function implementation. (Assume that activation function
+        is step function signal).</font></p>
+        <p align="center" class="MsoNormal"
+        style="text-indent:35.4pt"><font color="#EEEEEE"
+        face="Arial"><img src="http://home.agh.edu.pl/~vlsi/AI/xor_t/en/files/fig1.jpg" width="397"
+        height="422"><br>
+        <br>
+        Fig. 1. Single-layer network</font></p>
+        <p align="left" class="MsoNormal"><font color="#EEEEEE"
+        face="Arial"><br>
+        The possibility of learning process of neural network is
+        defined by linear separity of teaching data (one line
+        separates set of data that represents u=1, and that
+        represents u=0). These conditions are fulfilled by
+        functions such as OR or AND. <br>
+        <br>
+        For example, AND function has a following set of teaching
+        vectors (Tab. 1.)</font><font face="Times New Roman"><br>
+        </font></p>
+        <div align="center"><center><table border="1"
+        cellpadding="4" cellspacing="3" width="25%">
+            <tr>
+                <td align="center"><p align="center"><font
+                color="#EEEEEE" face="Arial">x<sub>1</sub></font></p>
+                </td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">x<sub>2</sub></font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">u</font></td>
+            </tr>
+            <tr>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+            </tr>
+            <tr>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+            </tr>
+            <tr>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+            </tr>
+            <tr>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+            </tr>
+        </table>
+        </center></div><p align="center"><font color="#EEEEEE"
+        face="Arial">Tab. 1. Set of teaching vectors of AND
+        function</font></p>
+        <p class="MsoNormal"><font color="#EEEEEE" face="Arial">The
+        neural network that implements such a function is made of
+        one output neuron with two inputs x<sub>1</sub>, x<sub>2 </sub>and
+        b<sub>1 </sub>polarity (Fig. 2).</font></p>
+        <p align="center" class="MsoNormal"><font color="#EEEEEE"
+        face="Arial"><img src="http://home.agh.edu.pl/~vlsi/AI/xor_t/en/files/fig2.jpg" width="213"
+        height="299"><br>
+        <br>
+        Fig. 2. Neural network that can implement AND function</font></p>
+        <p class="MsoNormal"><font color="#EEEEEE" face="Arial">Assume
+        that during teaching process y<sub>1</sub> = f ( W<sub>11</sub>x<sub>1</sub>
+        + W<sub>12</sub>x<sub>2</sub> + b<sub>1</sub> ) = u<sub>1</sub>
+        which is ilustrated on Fig. 3.</font></p>
+        <p align="center" class="MsoNormal"><font color="#EEEEEE"
+        face="Arial"><img src="http://home.agh.edu.pl/~vlsi/AI/xor_t/en/files/fig3.jpg" width="359"
+        height="344"><br>
+        <br>
+        Fig. 3. Linear separity in case of AND function</font></p>
+        <p class="MsoNormal"><font color="#EEEEEE" face="Arial">As
+        it's seen in Tab. 1, we should receive '1' as output
+        signal only in (1,1) point. The equation of line that
+        implements linear separity is u<sub>1</sub> = W<sub>11</sub>x<sub>1</sub>
+        + W<sub>12</sub>x<sub>2</sub> + b<sub>1. </sub>So we can
+        match this line to obtain linear separity by finding
+        suitable coefficients of the line (W<sub>11</sub>, W<sub>12</sub>
+        i b<sub>1</sub>). As we can see of Fig. 3., it's no
+        problem for AND function.<br>
+        <br>
+        <br>
+        <br>
+        Linear separity can be no longer used with XOR function (teaching
+        vectors of this function are shown in Tab. 2.).<br>
+        </font></p>
+        <div align="center"><center><table border="1"
+        cellpadding="4" cellspacing="3" width="25%">
+            <tr>
+                <td align="center"><p align="center"><font
+                color="#EEEEEE" face="Arial">x<sub>1</sub></font></p>
+                </td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">x<sub>2</sub></font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">u</font></td>
+            </tr>
+            <tr>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+            </tr>
+            <tr>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+            </tr>
+            <tr>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+            </tr>
+            <tr>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">1</font></td>
+                <td align="center"><font color="#EEEEEE"
+                face="Arial">0</font></td>
+            </tr>
+        </table>
+        </center></div><p align="center"><font color="#EEEEEE"
+        face="Arial">Tab. 2. Set of teaching vectors of XOR
+        function</font></p>
+        <p class="MsoNormal"><font color="#EEEEEE" face="Arial">It
+        means that it's not possible to find a line which
+        separates data space to space with output signal - 0, and
+        space with output signal - 1 (Fig. 4). Inside the oval
+        area signal on output is '1'. Outside of this area,
+        output signal equals '0'. It's not possible to make it by
+        one line. </font></p>
+        <p align="center" class="MsoNormal"><font color="#EEEEEE"
+        face="Arial"><img src="http://home.agh.edu.pl/~vlsi/AI/xor_t/en/files/fig4.jpg" width="379"
+        height="340"><br>
+        <br>
+        Fig. 4. Data space of XOR function</font></p>
+        <p class="MsoNormal"><font color="#EEEEEE" face="Arial"><br>
+        The coefficients of this line and the weights W<sub>11</sub>,
+        W<sub>12 </sub>and b<sub>1</sub>make no affect to
+        impossibility of using linear separity. So we can't
+        implement XOR function by one perceptron.</font></p>
+        <p class="MsoNormal"><font color="#EEEEEE" face="Arial">The
+        solve of this problem is an extension of the network in
+        the way that one added neuron in the layer creates new
+        network. Neurons in this network have weights that
+        implement division of space as below:</font></p>
+        <p><font color="#EEEEEE" face="Arial">1) for 1st neuron<br>
+        <br>
+        u<sub>1 </sub>= W<sub>11</sub>x<sub>1</sub> + W<sub>12</sub>x
+        <sub>2</sub> + b<sub>1</sub> &gt; 0<br>
+        u<sub>1 </sub>= W<sub>21</sub>x<sub>1</sub> + W<sub>22</sub>x
+        <sub>2</sub> + b<sub>1</sub> &lt; 0<br>
+        <br>
+        2) for 2nd neuron<br>
+        <br>
+        u<sub>2 </sub>= W<sub>21</sub>x<sub>1</sub> + W<sub>22</sub>x
+        <sub>2</sub> + b<sub>2</sub> &gt; 0<br>
+        u<sub>2 </sub>= W<sub>21</sub>x<sub>1</sub> + W<sub>22</sub>x
+        <sub>2</sub> + b<sub>2</sub> &lt; 0</font></p>
+        <p class="MsoNormal"><font color="#EEEEEE" face="Arial">The
+        division should be like in Figure No 5.</font></p>
+        <p align="center" class="MsoNormal"><font color="#EEEEEE"
+        face="Arial"><img src="http://home.agh.edu.pl/~vlsi/AI/xor_t/en/files/fig5.jpg" width="515"
+        height="485"><br>
+        <br>
+        Fig. 5. The way of implementation of XOR function by
+        multilayer neural network</font></p>
+        <p class="MsoNormal"><font color="#EEEEEE" face="Arial">After
+        adding the next layer with neuron, it's possible to make
+        logical sum. On the Fig. 5 we can see it as a common area
+        of sets u<sub>1</sub>&gt;0 and u<sub>2</sub>&gt;0.<br>
+        Fig. 6 shows full multilayer neural network structure
+        that can implement XOR function. Each additional neuron
+        makes possible to create linear division on u<sub>i</sub>&gt;0
+        and u<sub>i</sub>&lt;0 border that depends on neuron
+        weights. Output layer is the layer that is combination of
+        smaller areas in which was divided input area (by
+        additional neuron). <br>
+        </font></p>
+        <p align="center" class="MsoNormal"><font color="#EEEEEE"
+        face="Arial"><img src="http://home.agh.edu.pl/~vlsi/AI/xor_t/en/files/fig6.jpg" width="519"
+        height="289"><br>
+        <br>
+        Fig. 6. Structure of a network that has ability to
+        implement XOR function</font></p>
+        </td>
+    </tr>
+</table>
+</center></div>
+</body>
+
+<!-- Mirrored from home.agh.edu.pl/~vlsi/AI/xor_t/en/main.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 May 2020 06:54:18 GMT -->
+</html>

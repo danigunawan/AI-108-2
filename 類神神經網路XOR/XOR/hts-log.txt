@@ -1,0 +1,13 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 30 May 2020 14:54:16 at http://home.agh.edu.pl/~vlsi/AI/xor_t/en/main.htm +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp
+(winhttrack -qwr1%e0C2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "zh_TW, en, *" http://home.agh.edu.pl/~vlsi/AI/xor_t/en/main.htm -O1 "C:\Users\user\Desktop\公司資料\類神神經網路XOR\XOR" +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:54:18	Warning: 	Found for home.agh.edu.pl/robots.txt
+14:54:18	Warning: 	File has moved from home.agh.edu.pl/robots.txt to http://home.agh.edu.pl/~robots.txt
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 seconds : 2 links scanned, 1 files written (11370 bytes overall) [12160 bytes received at 6080 bytes/sec], 2.0 requests per connection
+(No errors, 2 warnings, 0 messages)
