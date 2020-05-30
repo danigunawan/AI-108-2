@@ -1,0 +1,17 @@
+#---------------------------設定回調函數----------------------------------
+
+
+
+#建立儲存目錄
+model_dir = 'models/'
+os.makedirs(model_dir)
+
+# 設定 ModelCheckpoint 回調函數儲存網路模型
+#「monitor」 監測驗證資料的值
+#「save_best_only」 有更好的模型，就覆蓋 (儲存最好的模型)
+#「mode」min 監測數據越小越好
+model_mckp = keras.callbacks.ModelCheckpoint(model_dir + '/Best_model_1.h5', 
+                                             monitor='val_mean_absolute_error', 
+                                             save_best_only=True, 
+                                             mode='min')
+

@@ -1,0 +1,200 @@
+
+
+import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+
+
+
+
+#-------------------------分割資料集----------------------------------
+
+
+
+#載入資料集
+data = pd.read_csv("data/kc_house_data.csv")
+
+# 將顯示列數設定為50，避免部份資料無法顯示
+pd.options.display.max_columns = 50
+
+
+# 將date日期拆為年,月,日,並轉成數值
+data['year'] = pd.to_numeric(data['date'].str.slice(0, 4))
+data['month'] = pd.to_numeric(data['date'].str.slice(4, 6))
+data['day'] = pd.to_numeric(data['date'].str.slice(6, 8))
+
+# 刪除沒有用的數據， inplace 將更新後的資料存回原本的地方
+data.drop(['id'], axis="columns", inplace=True)
+data.drop(['date'], axis="columns", inplace=True)
+
+#取得資料的總量
+data_num = data.shape[0]
+indexes = np.arange(0,data_num)
+
+
+# 將索引值分為Train、validation和test分為，比例 = 6:2:2
+train_indexes = indexes[:int(data_num *0.6)]
+val_indexes = indexes[int(data_num *0.6):int(data_num *0.8)]
+test_indexes = indexes[int(data_num *0.8):]
+
+
+# 利用索引值從data取出訓練資料、驗證資料、測試資料
+train_data = data.loc[train_indexes]
+val_data = data.loc[val_indexes]
+test_data = data.loc[test_indexes]
+
+
+#使用 標準分數(z-score)，將資料標準化
+ #資料合併
+train_validation_data = pd.concat([train_data, val_data])
+mean = train_validation_data.mean() #平均值
+std = train_validation_data.std() #標準差
+
+# (資料 - 平均值) / 標準差
+train_data_f = (train_data - mean) / std
+val_data_f = (val_data - mean) / std
+
+
+
+#建立np格式的訓練資料，分離出「目標」(價格)
+x_train = np.array(train_data_f.drop('price', axis='columns'))
+y_train = np.array(train_data_f['price'])
+x_val = np.array(val_data_f.drop('price', axis='columns'))
+y_val = np.array(val_data_f['price'])
+
+
+
+#---------------------------建立模型----------------------------------
+
+
+
+
+# 以Sequential方式 建立一個的model
+model = keras.Sequential(name='model-1')
+
+#使用Dense函數將第1層全連接層設為64個unit，將輸入設定為 21
+#使用 relu 激活函式
+model.add(layers.Dense(64, activation='relu', input_dim=21))
+# 第2層全連接層設為64個神經元unit
+model.add(layers.Dense(64, activation='relu'))
+# 最後一層全連接層設為1個unit
+model.add(layers.Dense(1))
+# 顯示網路模型架構
+model.summary()
+
+
+
+
+#---------------------------設定訓練使用的函數-----------------------------
+
+
+
+
+model.compile(loss=keras.losses.MeanSquaredError(),
+              #設定損失函數為 訓練 驗證 差的平方值
+              # ( train - val )^2
+              
+              metrics=[keras.metrics.MeanAbsoluteError()])
+              #設定評估模型的方式為 訓練 驗證 差的絕對值
+              # abs( train - val )
+
+
+
+
+#---------------------------設定回調函數----------------------------------
+
+
+
+#建立儲存目錄
+model_dir = 'models/'
+os.makedirs(model_dir)
+
+# 設定 ModelCheckpoint 回調函數儲存網路模型
+#「monitor」 監測驗證資料的值
+#「save_best_only」 有更好的模型，就覆蓋 (儲存最好的模型)
+#「mode」min 監測數據越小越好
+model_mckp = keras.callbacks.ModelCheckpoint(model_dir + '/Best_model_1.h5', 
+                                             monitor='val_mean_absolute_error', 
+                                             save_best_only=True, 
+                                             mode='min')
+
+
+
+
+#---------------------------訓練模型----------------------------------
+
+
+
+
+history = model.fit(x_train, y_train,#傳入訓練資料
+                    batch_size=64,   #批次大小設為 64
+                    epochs=10,       #將整個 data 訓練 10 遍
+                    validation_data=(x_val, y_val),  #驗證資料
+                    callbacks=[model_mckp])#回調函數 儲存最好的模型
+
+
+
+
+
+#---------------------------查看圖表----------------------------------
+
+
+
+#繪製損失值(loss)圖表
+plt.plot(history.history['loss'], label='train')
+plt.plot(history.history['val_loss'], label='validation')
+y_ticks = np.linspace(0,0.35,8)
+plt.yticks(y_ticks)
+plt.title('Mean square error')
+plt.ylabel('loss')
+plt.xlabel('epochs')
+plt.legend(loc='upper right')
+
+
+"""
+
+#繪製效能指標(metrics)圖表
+plt.plot(history.history['mean_absolute_error'], label='train')
+plt.plot(history.history['val_mean_absolute_error'], label='validation')
+plt.ylim(0.12, 0.26)
+plt.title('Mean absolute error')
+plt.ylabel('metrics')
+plt.xlabel('epochs')
+plt.legend(loc='upper right')
+"""
+
+
+
+
+#---------------------------測試資料----------------------------------
+
+
+
+
+# 載入模型
+model = keras.models.load_model('models/Best_model_1.h5')
+
+# 先將房屋價格取出
+y_test = np.array(test_data['price'])
+
+# 標準化數據
+test_data = (test_data - mean) / std
+
+# 將輸入數據存成Numpy 格式
+x_test = np.array(test_data.drop('price', axis='columns'))
+
+# 預測測試數據
+y_pred = model.predict(x_test)
+
+# 將預測結果轉換回來(因為訓練時的訓練目標也有經過標準化)
+y_pred = np.reshape(y_pred * std['price'] + mean['price'], y_test.shape)
+
+# 計算平均的誤差百分比
+percentage_error = np.mean(np.abs(y_test - y_pred)) / np.mean(y_test) * 100
+
+# 顯示誤差百分比
+print("Model_1 Percentage Error: {:.2f}%".format(percentage_error))

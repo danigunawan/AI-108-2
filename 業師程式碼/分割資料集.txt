@@ -1,0 +1,47 @@
+#-------------------------分割資料集----------------------------------
+
+
+
+#載入資料集
+data = pd.read_csv("data/kc_house_data.csv")
+
+# 將顯示列數設定為50，避免部份資料無法顯示
+pd.options.display.max_columns = 50
+
+# 將date日期拆為年,月,日,並轉成數值
+data['year'] = pd.to_numeric(data['date'].str.slice(0, 4))
+data['month'] = pd.to_numeric(data['date'].str.slice(4, 6))
+data['day'] = pd.to_numeric(data['date'].str.slice(6, 8))
+
+# 刪除沒有用的數據， inplace 將更新後的資料存回原本的地方
+data.drop(['id'], axis="columns", inplace=True)
+data.drop(['date'], axis="columns", inplace=True)
+
+#取得資料的總量
+data_num = data.shape[0]
+indexes = np.arange(0,data_num)
+
+# 將索引值分為Train、validation和test分為，比例 = 6:2:2
+train_indexes = indexes[:int(data_num *0.6)]
+val_indexes = indexes[int(data_num *0.6):int(data_num *0.8)]
+test_indexes = indexes[int(data_num *0.8):]
+
+# 利用索引值從data取出訓練資料、驗證資料、測試資料
+train_data = data.loc[train_indexes]
+val_data = data.loc[val_indexes]
+test_data = data.loc[test_indexes]
+
+#使用 標準分數(z-score)，將資料標準化
+train_validation_data = pd.concat([train_data, val_data]) #資料合併
+mean = train_validation_data.mean() #平均值
+std = train_validation_data.std() #標準差
+
+# (資料 - 平均值) / 標準差
+train_data_f = (train_data - mean) / std
+val_data_f = (val_data - mean) / std
+
+#建立np格式的訓練資料，分離出「目標」(價格)
+x_train = np.array(train_data_f.drop('price', axis='columns'))
+y_train = np.array(train_data_f['price'])
+x_val = np.array(val_data_f.drop('price', axis='columns'))
+y_val = np.array(val_data_f['price'])

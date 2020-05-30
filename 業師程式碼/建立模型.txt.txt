@@ -1,0 +1,17 @@
+#---------------------------建立模型----------------------------------
+
+
+
+
+# 以Sequential方式 建立一個的model
+model = keras.Sequential(name='model-1')
+
+#使用Dense函數將第1層全連接層設為64個unit，將輸入設定為 21
+#使用 relu 激活函式
+model.add(layers.Dense(64, activation='relu', input_dim=21))
+# 第2層全連接層設為64個神經元unit
+model.add(layers.Dense(64, activation='relu'))
+# 最後一層全連接層設為1個unit
+model.add(layers.Dense(1))
+# 顯示網路模型架構
+model.summary()
