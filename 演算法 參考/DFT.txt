@@ -1,0 +1,54 @@
+
+public class FFT {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//公式    X[k]=(1/N)*series n=0N-1 x[n]*exp(-j*2p*n*k/N), k=0, ..., N-1
+		 final double PI=3.14;
+		 final double N=300;
+		 //DFT 空間轉頻率
+		double [] dft_out_re = new double [(int) N];
+		double [] dft_out_im = new double [(int) N];
+		double [] dft_one_re = new double [(int) N];
+		double [] dft_one_im = new double [(int) N];
+		double [] amp = new double [(int) N];
+		  
+		int n,k;
+		double s;
+		for(k=0;k<N;k++) {
+			for(n=0;n<N;n++) {
+				
+				   // 欧拉公式 exp(ix) = cos(x) + isin(x)
+				//s(t) = 0.6 [ sin( 2π 50t ) + sin( 2π 500t ) ] 原信號
+				s=0.5*Math.sin(n*PI*100)+0.5*Math.sin(n*PI*1000);
+				dft_one_re[n]=s*Math.cos(2*PI/N*n*k);
+				dft_one_im[n]=s*Math.sin(2*PI/N*n*k);
+				dft_out_re[k]+=dft_one_re[n];
+				dft_out_im[k]+=dft_one_im[n];
+
+			}
+			amp [k]= Math.sqrt(dft_out_re[k]*dft_out_re[k]+dft_out_im[k]*dft_out_im[k]);
+			System.out.print(k+"  ");
+			System.out.println(amp [k]);
+		}
+
+		
+	}
+	static void dft(double[] inreal , double[] inimag,
+            double[] outreal, double[] outimag) {
+                 int n = inreal.length;
+            for (int k = 0; k < n; k++) {  
+               double sumreal = 0;
+                double sumimag = 0;
+    for (int t = 0; t < n; t++) {  
+        double angle = 2 * Math.PI * t * k / n;
+        sumreal +=  inreal[t] * Math.cos(angle) + inimag[t] * Math.sin(angle);
+        sumimag += -inreal[t] * Math.sin(angle) + inimag[t] * Math.cos(angle);
+    }
+    outreal[k] = sumreal;
+    outimag[k] = sumimag;
+}
+                     
+}
+}
