@@ -1,1 +1,1 @@
-[我的部落格](http://blog.csdn.net/guodongxiaren)  
+[FFT](http://www.cmlab.csie.ntu.edu.tw/cml/dsp/training/coding/transform/fft.html)  
