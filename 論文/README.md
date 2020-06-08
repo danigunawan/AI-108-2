@@ -1,1 +1,2 @@
-[FFT](http://www.cmlab.csie.ntu.edu.tw/cml/dsp/training/coding/transform/fft.html)  
+論文 
+講解 [FFT 傳送](http://www.cmlab.csie.ntu.edu.tw/cml/dsp/training/coding/transform/fft.html)  
