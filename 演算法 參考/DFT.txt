@@ -4,7 +4,7 @@ public class FFT {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//��ʽ    X[k]=(1/N)*series n=0N-1 x[n]*exp(-j*2p*n*k/N), k=0, ..., N-1
+		//¹«Ê½    X[k]=(1/N)*series n=0N-1 x[n]*exp(-j*2p*n*k/N), k=0, ..., N-1
 
     	
 
@@ -16,12 +16,12 @@ public class FFT {
 		double [] dft_one_re = new double [8000];
 		double [] dft_one_im = new double [8000];
 		double [] amp = new double [8000];
-		
+		// 輸入訊號 sin 0.6 100t/2    0.6 sin  1000t/2    
 		int n,k;
 		double s;
 		for(k=0;k<N;k++) {
 			for(n=0;n<N;n++) {			
-				s=0.6*Math.sin(n*PI*100*2)+0.6*Math.sin(n*PI*1000*2);
+				s=0.6*Math.sin(n*PI*50)+0.6*Math.sin(n*PI*500);
 				dft_one_re[n]=s*Math.cos(2*PI/N*n*k);
 				dft_one_im[n]=s*Math.sin(2*PI/N*n*k);
 				dft_out_re[k]+=dft_one_re[n];
