@@ -20,7 +20,8 @@ public class FFT {
 		int n,k;
 		double s;
 		for(k=0;k<N;k++) {
-			for(n=0;n<N;n++) {			
+			for(n=0;n<N;n++) {		
+			
 				s=0.6*Math.sin(n*PI*50)+0.6*Math.sin(n*PI*500);
 				dft_one_re[n]=s*Math.cos(2*PI/N*n*k);
 				dft_one_im[n]=s*Math.sin(2*PI/N*n*k);
