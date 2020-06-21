@@ -1,6 +1,6 @@
 ## 7/15 深度學習課程
 ### [倫文查詢:](https://arxiv.org/search/?query=ANN&searchtype=all&source=header)  
-[google(基本)工程](https://arxiv.org/search/?query=ANN&searchtype=all&source=header)     
+[google(基本)工程](https://github.com/MyDearGreatTeacher/uTaipei2019)     
   
 [Anaconda Navigator 環境安裝教學](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E5%B7%A5%E7%A8%8B%E7%A8%8B%E5%BC%8F%E8%AC%9B%E7%BE%A9)          
    
