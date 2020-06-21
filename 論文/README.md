@@ -1,7 +1,7 @@
 ## 論文   
-[FFT 傳送](http://www.cmlab.csie.ntu.edu.tw/cml/dsp/training/coding/transform/fft.html)  
+### 數位訊號 [FFT 傳送](http://www.cmlab.csie.ntu.edu.tw/cml/dsp/training/coding/transform/fft.html)  
 
-1. 卷積神經網路
+## 1. 卷積神經網路
 (1) 1998 LeNet  
 論文名稱: Gradient-Based Learning Applied to Document Recognition  
 (2) 2012 AlexNet  
@@ -19,8 +19,7 @@ Reducing Internal Covariate Shift
 (7) 2015 InceptionNet v3  
 論文名稱: Rethinking the Inception Architecture for Computer Vision  
 (8) 2016 InceptionNet v4  
-論文名稱: Inception-v4, Inception-ResNet and the Impact of Residual  
-Connections on Learning  
+論文名稱: Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning  
 (9) 2015 ResNet   
 論文名稱: Deep Residual Learning for Image Recognition  
 (10) 2016 SqueezeNet 
