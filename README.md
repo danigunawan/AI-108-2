@@ -1,4 +1,4 @@
-## 深度學習課程( 6-15 ) 
+## 深度學習課程( 6-15 ) 12周   出席 XXXXX0XXX00000
 ###  邁向 資料煉金術師中
 
 [google(基本)工程](https://github.com/MyDearGreatTeacher/uTaipei2019)     
