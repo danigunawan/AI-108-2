@@ -11,7 +11,7 @@
 
 [數位影像處理講義](https://github.com/SuWeizhe1124/AI-108-2/blob/master/%E5%B0%8F%E6%B3%A2%E5%9B%9B%E7%B6%AD.pdf)  
 
- [ 數位影像處理實作 ](https://github.com/SuWeizhe1124/AI-108-2/blob/master/%E6%95%B8%E4%BD%8D%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86JAVA.rar) 
+ [ 數位影像處理演算法 ](https://github.com/SuWeizhe1124/AI-108-2/blob/master/%E6%95%B8%E4%BD%8D%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86JAVA.rar) 
  
 [ 論文整理傳送 ](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E8%AB%96%E6%96%87)    
   
