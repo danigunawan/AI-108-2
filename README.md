@@ -2,7 +2,7 @@
 ### [倫文查詢:](https://arxiv.org/search/?query=ANN&searchtype=all&source=header)  
 google 工程    OK  
   
-[環境安裝傳送]       OK   
+[環境安裝傳送](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E5%B7%A5%E7%A8%8B%E7%A8%8B%E5%BC%8F%E8%AC%9B%E7%BE%A9)       OK   
    
 [ 演算法傳送 ](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E6%BC%94%E7%AE%97%E6%B3%95%20%E5%8F%83%E8%80%83)   OK
   
