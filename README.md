@@ -1,4 +1,4 @@
-## 7/15 深度學習課程
+## 深度學習課程( 6-15 )
 
 [google(基本)工程](https://github.com/MyDearGreatTeacher/uTaipei2019)     
   
