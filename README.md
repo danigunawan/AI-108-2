@@ -16,3 +16,10 @@
 [ 論文整理傳送 ](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E8%AB%96%E6%96%87)    
   
 [數字辨識JAVA 更新中 傳送](https://github.com/SuWeizhe1124/AI-108-2/tree/master/JAVA)  
+
+目前 技能點
+
+工程點   60%  
+演算法   70%  
+
+
