@@ -1,4 +1,4 @@
-## 論文   
+## 人工智慧相關論文   
 ### 數位訊號 [FFT 傳送](http://www.cmlab.csie.ntu.edu.tw/cml/dsp/training/coding/transform/fft.html)  
 
 ## 1. 卷積神經網路
