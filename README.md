@@ -8,4 +8,6 @@ google 工程    OK
   
 [數位訊號傳送]
 
+[數位影像處理講義])()
+
 [ 論文整理傳送 ](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E8%AB%96%E6%96%87)  OK
