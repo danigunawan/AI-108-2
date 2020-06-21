@@ -5,7 +5,7 @@
   
 [Anaconda Navigator 環境安裝教學](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E5%B7%A5%E7%A8%8B%E7%A8%8B%E5%BC%8F%E8%AC%9B%E7%BE%A9)          
    
-[ 演算法排序傳送 ](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E6%BC%94%E7%AE%97%E6%B3%95%20%E5%8F%83%E8%80%83)   
+[ 演算法傳送 ](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E6%BC%94%E7%AE%97%E6%B3%95%20%E5%8F%83%E8%80%83)   
   
 [數位訊號傳送](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E6%95%B8%E4%BD%8D%E8%A8%8A%E8%99%9F)  
 
