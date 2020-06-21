@@ -17,13 +17,13 @@
   
 [數字辨識JAVA 更新中 傳送](https://github.com/SuWeizhe1124/AI-108-2/tree/master/JAVA)  
 
-[人工智慧講義]
+[人工智慧講義](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E8%AC%9B%E7%BE%A9)
 
-## 目前 技能點
+## 技能點
 //------------------------------------------------------------------//
 
 工程點   20%   
 
-演算法   80%    
+演算點   80%    
 
 
