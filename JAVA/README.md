@@ -1,1 +1,1 @@
-##  補0 OK  size 4*4   max_pool 中 
+##   size 3*3   max_pool 中 
