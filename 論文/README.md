@@ -2,8 +2,8 @@
 ### 數位訊號 [FFT 傳送](http://www.cmlab.csie.ntu.edu.tw/cml/dsp/training/coding/transform/fft.html)  
   
 ## 國外倫文查詢:
-[SMU](https://scholar.smu.edu/do/search/?q=BPNN&start=0&context=2110049&facet=)
-[arxiv](https://arxiv.org/search/?query=ANN&searchtype=all&source=header)  
+[SMU](https://scholar.smu.edu/do/search/?q=BPNN&start=0&context=2110049&facet=)  
+[Arxiv](https://arxiv.org/search/?query=ANN&searchtype=all&source=header)   
 ## 1. 卷積神經網路
 (1) 1998 LeNet  
 論文名稱: Gradient-Based Learning Applied to Document Recognition  
