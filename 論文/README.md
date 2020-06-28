@@ -5,6 +5,8 @@
 [SMU](https://scholar.smu.edu/do/search/?q=BPNN&start=0&context=2110049&facet=)  
 [Arxiv](https://arxiv.org/search/?query=ANN&searchtype=all&source=header)   
 [Google](https://scholar.google.com/schhp?hl=zh-TW&as_sdt=0,5)
+
+[100 篇論文 ](https://gitycc.github.io/machine-learning-papers-summary/?fbclid=IwAR0u8ACGBq788yv5nqF_tdTOArzLQZaVGlZqdVH1S_H1dVOjovS7et_EQTQ#/speech/waveglow)
 ## 1. 卷積神經網路
 (1) 1998 LeNet  
 論文名稱: Gradient-Based Learning Applied to Document Recognition  
