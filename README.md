@@ -18,7 +18,7 @@
 [數字辨識JAVA 更新中 傳送](https://github.com/SuWeizhe1124/AI-108-2/tree/master/JAVA)  
 
 [人工智慧講義](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E8%AC%9B%E7%BE%A9)
-
-## 類神經網路 本身就是個錯誤 所以學會是為了 工作 沒什麼好研究的
+ 類神經網路 本身就是個錯誤
+ 所以學會是為了 工作 沒什麼好研究的
 
 
