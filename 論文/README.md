@@ -33,5 +33,6 @@ Reducing Internal Covariate Shift
 <0.5MB model size  
 (11) 2017 WRN  
 論文名稱: Wide Residual Networks  
+https://youtu.be/SQ67NBCLV98
 [WAN 程式碼 傳送](https://github.com/szagoruyko/wide-residual-networks)
 
