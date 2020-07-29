@@ -21,3 +21,4 @@
 
 
 [部落格](https://ed521.github.io/2019/07/hexo-install/)
+[個人部落格](https://suweizhe1124.github.io/)
