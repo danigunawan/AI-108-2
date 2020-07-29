@@ -10,4 +10,4 @@
 [數字辨識JAVA 更新中 傳送](https://github.com/SuWeizhe1124/AI-108-2/tree/master/JAVA)  
 [人工智慧講義](https://github.com/SuWeizhe1124/AI-108-2/tree/master/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E8%AC%9B%E7%BE%A9)
 [部落格](https://ed521.github.io/2019/07/hexo-install/)  
-[個人部落格](https://suweizhe1124.github.io/)
+[個人部落格完成](https://suweizhe1124.github.io/)
