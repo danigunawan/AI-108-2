@@ -12,3 +12,4 @@
 [部落格](https://ed521.github.io/2019/07/hexo-install/)  
 [個人部落格完成](https://suweizhe1124.github.io/)  
 [原來可以涉及其他領域](http://ocw.nsysu.edu.tw/files/11-1059-5406.php?Lang=zh-tw)
+[電磁學](https://youtu.be/ojFBbXNgZ7o)
