@@ -12,5 +12,5 @@
 [部落格](https://ed521.github.io/2019/07/hexo-install/)  
 [個人部落格完成](https://suweizhe1124.github.io/)  
 [原來可以涉及其他領域](http://ocw.nsysu.edu.tw/files/11-1059-5406.php?Lang=zh-tw)  
-[電磁學](https://youtu.be/ojFBbXNgZ7o)
-[化學公式](https://zh.wikipedia.org/wiki/%E5%93%88%E7%89%B9%E9%87%8C%EF%BC%8D%E7%A6%8F%E5%85%8B%E6%96%B9%E7%A8%8B)
+[電磁學](https://youtu.be/ojFBbXNgZ7o)  
+[化學公式-哈特里-福克近似](https://zh.wikipedia.org/wiki/%E5%93%88%E7%89%B9%E9%87%8C%EF%BC%8D%E7%A6%8F%E5%85%8B%E6%96%B9%E7%A8%8B)
